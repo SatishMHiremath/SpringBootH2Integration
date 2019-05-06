@@ -7,7 +7,7 @@ create table customer(
 );
 
 insert into customer(id, name, age, active)
-values(1,"Raj", 22, "false");
+values(1,'Raj', 22, 'false');
 
 insert into customer(id, name, age, active)
-values(2,"Ravi", 23, "true");
+values(2,'Ravi', 23, 'true');

@@ -11,14 +11,13 @@ import javax.persistence.Table;
 @Table(name = "customer")
 public class Customer {
 	@Id
-	@Column
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	@Column
+	@Column(name = "name")
 	private String name;
-	@Column
+	@Column(name = "age")
 	private Integer age;
-	@Column
+	@Column(name = "active")
 	private Boolean active;
 	
 	public Customer() {
